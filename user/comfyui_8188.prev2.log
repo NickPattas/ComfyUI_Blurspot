@@ -1,78 +1,85 @@
-## ComfyUI-Manager: installing dependencies. (GitPython)
-[2026-01-14 22:57:10.904] ## ComfyUI-Manager: installing dependencies done.
-[2026-01-14 22:57:10.905] ** ComfyUI startup time: 2026-01-14 22:57:10.905
-[2026-01-14 22:57:10.906] ** Platform: Linux
-[2026-01-14 22:57:10.907] ** Python version: 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]
-[2026-01-14 22:57:10.908] ** Python executable: /usr/bin/python3
-[2026-01-14 22:57:10.908] ** ComfyUI Path: /opt/ComfyUI
-[2026-01-14 22:57:10.909] ** ComfyUI Base Folder Path: /opt/ComfyUI
-[2026-01-14 22:57:10.910] ** User directory: /opt/ComfyUI/user
-[2026-01-14 22:57:10.911] ** ComfyUI-Manager config path: /opt/ComfyUI/user/__manager/config.ini
-[2026-01-14 22:57:10.912] ** Log path: /opt/ComfyUI/user/comfyui.log
+## ComfyUI-Manager: installing dependencies done.
+[2026-01-14 22:59:19.962] ** ComfyUI startup time: 2026-01-14 22:59:19.962
+[2026-01-14 22:59:19.963] ** Platform: Linux
+[2026-01-14 22:59:19.964] ** Python version: 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]
+[2026-01-14 22:59:19.965] ** Python executable: /usr/bin/python3
+[2026-01-14 22:59:19.966] ** ComfyUI Path: /opt/ComfyUI
+[2026-01-14 22:59:19.967] ** ComfyUI Base Folder Path: /opt/ComfyUI
+[2026-01-14 22:59:19.968] ** User directory: /opt/ComfyUI/user
+[2026-01-14 22:59:19.968] ** ComfyUI-Manager config path: /opt/ComfyUI/user/__manager/config.ini
+[2026-01-14 22:59:19.970] ** Log path: /opt/ComfyUI/user/comfyui.log
 
 Prestartup times for custom nodes:
-[2026-01-14 22:57:11.528]   27.4 seconds: /opt/ComfyUI/custom_nodes/comfyui-manager
-[2026-01-14 22:57:11.528] 
-[2026-01-14 22:57:14.123] Checkpoint files will always be loaded safely.
-[2026-01-14 22:57:14.546] Total VRAM 8192 MB, total RAM 7894 MB
-[2026-01-14 22:57:14.546] pytorch version: 2.4.1+cu121
-[2026-01-14 22:57:14.548] Set vram state to: NORMAL_VRAM
-[2026-01-14 22:57:14.549] Device: cuda:0 NVIDIA GeForce RTX 3070 Ti : cudaMallocAsync
-[2026-01-14 22:57:14.549] Using async weight offloading with 2 streams
-[2026-01-14 22:57:14.549] Enabled pinned memory 7499.0
-[2026-01-14 22:57:20.955] WARNING: You need pytorch with cu130 or higher to use optimized CUDA operations.
-[2026-01-14 22:57:20.955] Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8']}
-[2026-01-14 22:57:20.955] Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
-[2026-01-14 22:57:20.956] Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8']}
-[2026-01-14 22:57:24.160] Using pytorch attention
-[2026-01-14 22:57:37.653] Python version: 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]
-[2026-01-14 22:57:37.653] ComfyUI version: 0.8.2
-[2026-01-14 22:57:37.657] ComfyUI frontend version: 1.35.9
-[2026-01-14 22:57:37.674] [Prompt Server] web root: /usr/local/lib/python3.11/dist-packages/comfyui_frontend_package/static
-[2026-01-14 22:57:40.149] Total VRAM 8192 MB, total RAM 7894 MB
-[2026-01-14 22:57:40.149] pytorch version: 2.4.1+cu121
-[2026-01-14 22:57:40.150] Set vram state to: NORMAL_VRAM
-[2026-01-14 22:57:40.151] Device: cuda:0 NVIDIA GeForce RTX 3070 Ti : cudaMallocAsync
-[2026-01-14 22:57:40.151] Using async weight offloading with 2 streams
-[2026-01-14 22:57:40.152] Enabled pinned memory 7499.0
-[2026-01-14 22:57:41.065] ### Loading: ComfyUI-Manager (V3.39.2)
-[2026-01-14 22:57:41.068] [ComfyUI-Manager] network_mode: public
-[2026-01-14 22:57:41.068] [ComfyUI-Manager] ComfyUI per-queue preview override detected (PR #11261). Manager's preview method feature is disabled. Use ComfyUI's --preview-method CLI option or 'Settings > Execution > Live preview method'.
-[2026-01-14 22:57:41.376] ### ComfyUI Version: v0.8.2-2-g5943fbf4 | Released on '2026-01-08'
-[2026-01-14 22:57:41.607] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
-[2026-01-14 22:57:41.634] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-[2026-01-14 22:57:41.739] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
-[2026-01-14 22:57:41.830] Workspace manager - Openning file hash dict
-[2026-01-14 22:57:41.835] 🦄🦄Loading: Workspace Manager (V2.1.0)
-[2026-01-14 22:57:41.846] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
-[2026-01-14 22:57:41.855] 
+[2026-01-14 22:59:20.517]    6.1 seconds: /opt/ComfyUI/custom_nodes/comfyui-manager
+[2026-01-14 22:59:20.517] 
+[2026-01-14 22:59:25.571] Checkpoint files will always be loaded safely.
+[2026-01-14 22:59:26.028] Total VRAM 8192 MB, total RAM 7894 MB
+[2026-01-14 22:59:26.028] pytorch version: 2.4.1+cu121
+[2026-01-14 22:59:26.030] Set vram state to: NORMAL_VRAM
+[2026-01-14 22:59:26.030] Device: cuda:0 NVIDIA GeForce RTX 3070 Ti : cudaMallocAsync
+[2026-01-14 22:59:26.031] Using async weight offloading with 2 streams
+[2026-01-14 22:59:26.031] Enabled pinned memory 7499.0
+[2026-01-14 22:59:31.421] WARNING: You need pytorch with cu130 or higher to use optimized CUDA operations.
+[2026-01-14 22:59:31.421] Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
+[2026-01-14 22:59:31.422] Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8']}
+[2026-01-14 22:59:31.422] Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8']}
+[2026-01-14 22:59:34.884] Using pytorch attention
+[2026-01-14 22:59:46.873] Python version: 3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]
+[2026-01-14 22:59:46.873] ComfyUI version: 0.8.2
+[2026-01-14 22:59:46.877] ComfyUI frontend version: 1.35.9
+[2026-01-14 22:59:46.895] [Prompt Server] web root: /usr/local/lib/python3.11/dist-packages/comfyui_frontend_package/static
+[2026-01-14 22:59:49.347] Total VRAM 8192 MB, total RAM 7894 MB
+[2026-01-14 22:59:49.347] pytorch version: 2.4.1+cu121
+[2026-01-14 22:59:49.349] Set vram state to: NORMAL_VRAM
+[2026-01-14 22:59:49.349] Device: cuda:0 NVIDIA GeForce RTX 3070 Ti : cudaMallocAsync
+[2026-01-14 22:59:49.349] Using async weight offloading with 2 streams
+[2026-01-14 22:59:49.350] Enabled pinned memory 7499.0
+[2026-01-14 22:59:49.952] ### Loading: ComfyUI-Manager (V3.39.2)
+[2026-01-14 22:59:49.954] [ComfyUI-Manager] network_mode: public
+[2026-01-14 22:59:49.955] [ComfyUI-Manager] ComfyUI per-queue preview override detected (PR #11261). Manager's preview method feature is disabled. Use ComfyUI's --preview-method CLI option or 'Settings > Execution > Live preview method'.
+[2026-01-14 22:59:50.247] ### ComfyUI Version: v0.8.2-2-g5943fbf4 | Released on '2026-01-08'
+[2026-01-14 22:59:50.492] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2026-01-14 22:59:50.525] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2026-01-14 22:59:50.611] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2026-01-14 22:59:50.701] Workspace manager - Openning file hash dict
+[2026-01-14 22:59:50.705] 🦄🦄Loading: Workspace Manager (V2.1.0)
+[2026-01-14 22:59:50.719] 
 Import times for custom nodes:
-[2026-01-14 22:57:41.857]    0.4 seconds: /opt/ComfyUI/custom_nodes/comfyui-manager
-[2026-01-14 22:57:41.857]    0.4 seconds: /opt/ComfyUI/custom_nodes/comfyui-workspace-manager
-[2026-01-14 22:57:41.858] 
-[2026-01-14 22:57:41.922] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-[2026-01-14 22:57:43.562] Context impl SQLiteImpl.
-[2026-01-14 22:57:43.562] Will assume non-transactional DDL.
-[2026-01-14 22:57:43.565] No target revision found.
-[2026-01-14 22:57:43.709] Starting server
+[2026-01-14 22:59:50.720]    0.4 seconds: /opt/ComfyUI/custom_nodes/comfyui-manager
+[2026-01-14 22:59:50.721] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2026-01-14 22:59:50.721]    0.4 seconds: /opt/ComfyUI/custom_nodes/comfyui-workspace-manager
+[2026-01-14 22:59:50.721] 
+[2026-01-14 22:59:50.807] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2026-01-14 22:59:52.407] Context impl SQLiteImpl.
+[2026-01-14 22:59:52.407] Will assume non-transactional DDL.
+[2026-01-14 22:59:52.411] No target revision found.
+[2026-01-14 22:59:52.622] Starting server
 
-[2026-01-14 22:57:43.710] To see the GUI go to: http://0.0.0.0:8188
-[2026-01-14 22:57:46.115] FETCH ComfyRegistry Data: 5/119
-[2026-01-14 22:57:50.803] FETCH ComfyRegistry Data: 10/119
-[2026-01-14 22:57:55.139] FETCH ComfyRegistry Data: 15/119
-[2026-01-14 22:57:59.535] FETCH ComfyRegistry Data: 20/119
-[2026-01-14 22:58:03.892] FETCH ComfyRegistry Data: 25/119
-[2026-01-14 22:58:05.955] FETCH ComfyRegistry Data: 30/119
-[2026-01-14 22:58:10.192] FETCH ComfyRegistry Data: 35/119
-[2026-01-14 22:58:14.570] FETCH ComfyRegistry Data: 40/119
-[2026-01-14 22:58:18.919] FETCH ComfyRegistry Data: 45/119
-[2026-01-14 22:58:22.486] [DEPRECATION WARNING] Detected import of deprecated legacy API: /scripts/ui.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
-[2026-01-14 22:58:22.489] [DEPRECATION WARNING] Detected import of deprecated legacy API: /extensions/core/groupNode.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
-[2026-01-14 22:58:22.774] [DEPRECATION WARNING] Detected import of deprecated legacy API: /scripts/ui/components/buttonGroup.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
-[2026-01-14 22:58:22.777] [DEPRECATION WARNING] Detected import of deprecated legacy API: /scripts/ui/components/button.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
-[2026-01-14 22:58:24.009] FETCH ComfyRegistry Data: 50/119
-[2026-01-14 22:58:28.723] FETCH ComfyRegistry Data: 55/119
-[2026-01-14 22:58:29.289] Error handling request from 172.18.0.1
-[2026-01-14 22:58:29.350] Error handling request from 172.18.0.1
-[2026-01-14 22:58:33.292] FETCH ComfyRegistry Data: 60/119
-[2026-01-14 22:58:35.357] FETCH ComfyRegistry Data: 65/119
+[2026-01-14 22:59:52.622] To see the GUI go to: http://0.0.0.0:8188
+[2026-01-14 22:59:54.847] FETCH ComfyRegistry Data: 5/119
+[2026-01-14 22:59:59.579] FETCH ComfyRegistry Data: 10/119
+[2026-01-14 23:00:03.929] FETCH ComfyRegistry Data: 15/119
+[2026-01-14 23:00:08.256] FETCH ComfyRegistry Data: 20/119
+[2026-01-14 23:00:09.989] FETCH ComfyRegistry Data: 25/119
+[2026-01-14 23:00:15.269] FETCH ComfyRegistry Data: 30/119
+[2026-01-14 23:00:19.522] FETCH ComfyRegistry Data: 35/119
+[2026-01-14 23:00:24.224] FETCH ComfyRegistry Data: 40/119
+[2026-01-14 23:00:27.467] FETCH ComfyRegistry Data: 45/119
+[2026-01-14 23:00:31.750] FETCH ComfyRegistry Data: 50/119
+[2026-01-14 23:00:36.374] FETCH ComfyRegistry Data: 55/119
+[2026-01-14 23:00:40.718] FETCH ComfyRegistry Data: 60/119
+[2026-01-14 23:00:46.165] FETCH ComfyRegistry Data: 65/119
+[2026-01-14 23:00:50.556] FETCH ComfyRegistry Data: 70/119
+[2026-01-14 23:00:52.476] FETCH ComfyRegistry Data: 75/119
+[2026-01-14 23:00:56.741] FETCH ComfyRegistry Data: 80/119
+[2026-01-14 23:01:01.474] FETCH ComfyRegistry Data: 85/119
+[2026-01-14 23:01:05.920] FETCH ComfyRegistry Data: 90/119
+[2026-01-14 23:01:10.830] FETCH ComfyRegistry Data: 95/119
+[2026-01-14 23:01:15.247] FETCH ComfyRegistry Data: 100/119
+[2026-01-14 23:01:20.529] FETCH ComfyRegistry Data: 105/119
+[2026-01-14 23:01:22.538] FETCH ComfyRegistry Data: 110/119
+[2026-01-14 23:01:26.993] FETCH ComfyRegistry Data: 115/119
+[2026-01-14 23:01:31.112] FETCH ComfyRegistry Data [DONE]
+[2026-01-14 23:01:31.345] [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+[2026-01-14 23:01:31.390] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2026-01-14 23:01:31.797] [ComfyUI-Manager] All startup tasks have been completed.
