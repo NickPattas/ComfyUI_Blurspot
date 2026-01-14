@@ -1,0 +1,45 @@
+services:
+  comfyui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CUDA_VERSION: "12.1.1"
+        UBUNTU_VERSION: "22.04"
+    
+    image: nickpattas/comfyui-blrspt:latest
+    container_name: comfyui-blrspt
+    
+    ports:
+      - "8188:8188"
+    
+    volumes:
+      - ./models:/opt/ComfyUI_Blurspot/models
+      - ./custom_nodes:/opt/ComfyUI_Blurspot/custom_nodes
+      - ./input:/opt/ComfyUI_Blurspot/input
+      - ./output:/opt/ComfyUI_Blurspot/output
+      - ./user:/opt/ComfyUI_Blurspot/user
+      - ./debug:/opt/ComfyUI_Blurspot/debug
+      - ./huggingface_cache:/opt/ComfyUI_Blurspot/huggingface_cache
+      - ./ide:/opt/ComfyUI_Blurspot/ide
+      - ./input:/opt/ComfyUI_Blurspot/input
+      - ./projects:/opt/ComfyUI_Blurspot/projects
+      - ./shell-snapshots:/opt/ComfyUI_Blurspot/shell-snapshots
+      - ./statsig:/opt/ComfyUI_Blurspot/statsig
+      - ./todos:/opt/ComfyUI_Blurspot/todos
+    
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - PYTHONUNBUFFERED=1
+    
+    restart: unless-stopped
+    shm_size: '2gb'
