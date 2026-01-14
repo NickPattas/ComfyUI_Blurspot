@@ -14,18 +14,18 @@ services:
       - "8188:8188"
     
     volumes:
-      - ./models:/opt/ComfyUI_Blurspot/models
-      - ./custom_nodes:/opt/ComfyUI_Blurspot/custom_nodes
-      - ./input:/opt/ComfyUI_Blurspot/input
-      - ./output:/opt/ComfyUI_Blurspot/output
-      - ./user:/opt/ComfyUI_Blurspot/user
-      - ./debug:/opt/ComfyUI_Blurspot/debug
-      - ./ide:/opt/ComfyUI_Blurspot/ide
-      - ./input:/opt/ComfyUI_Blurspot/input
-      - ./projects:/opt/ComfyUI_Blurspot/projects
-      - ./shell-snapshots:/opt/ComfyUI_Blurspot/shell-snapshots
-      - ./statsig:/opt/ComfyUI_Blurspot/statsig
-      - ./todos:/opt/ComfyUI_Blurspot/todos
+      - ./models:/opt/ComfyUI/models
+      - ./custom_nodes:/opt/ComfyUI/custom_nodes
+      - ./input:/opt/ComfyUI/input
+      - ./output:/opt/ComfyUI/output
+      - ./user:/opt/ComfyUI/user
+      - ./debug:/opt/ComfyUI/debug
+      - ./ide:/opt/ComfyUI/ide
+      - ./input:/opt/ComfyUI/input
+      - ./projects:/opt/ComfyUI/projects
+      - ./shell-snapshots:/opt/ComfyUI/shell-snapshots
+      - ./statsig:/opt/ComfyUI/statsig
+      - ./todos:/opt/ComfyUI/todos
     
     deploy:
       resources:
