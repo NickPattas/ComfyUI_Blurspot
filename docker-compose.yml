@@ -20,7 +20,6 @@ services:
       - ./output:/opt/ComfyUI_Blurspot/output
       - ./user:/opt/ComfyUI_Blurspot/user
       - ./debug:/opt/ComfyUI_Blurspot/debug
-      - ./huggingface_cache:/opt/ComfyUI_Blurspot/huggingface_cache
       - ./ide:/opt/ComfyUI_Blurspot/ide
       - ./input:/opt/ComfyUI_Blurspot/input
       - ./projects:/opt/ComfyUI_Blurspot/projects
